@@ -102,16 +102,3 @@ ul {
 a {
   text-decoration: none;
 }
-.content {
-  padding: 90px;
-  text-align: center;
-}
-.content h3,
-.content p {
-  margin: 0;
-  font-weight: lighter;
-  line-height: 48px;
-  font-size: 24px;
-  font-family: 'STFangsong';
-  color: #999999;
-}

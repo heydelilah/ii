@@ -4,30 +4,59 @@
 	<meta charset="UTF-8">
 	<title>About</title>
 	<link rel="stylesheet" href="../css/about.css">
+	<script src="../libs/jquery.js"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?0e0a6b1e8a47e27f313d1b2c93ac1890";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
 </head>
 <body>
 	<header class="header">
 		<div>
-			<span class="desc">
+			<span class="desc fl">
 				Hi Kityee !
 			</span>
-
-			<nav>
-				<span class="button">导航</span>
-				
-			</nav>
+			<span class="navBtn">导航</span>
 		</div>
 
 		<div class="title">
 			<h1>About</h1>
-			<span></span>
+			<span class="line"></span>
 			<p>关于我</p>
 		</div>
 	</header>
+
+	<nav class="nav">
+		<span class="arrow"></span>
+		<ul>
+			<li><a class="act">About / 关于我</a></li>
+			<li><a href="blogs.html">Blogs / 博文</a></li>
+			<li><a href="portfolio.html">Protfoio / 设计案例</a></li>
+			<li><a href="contact.html">Contact / 联系我</a></li>
+		</ul>
+	</nav>
 
 	<section class="content">
 		<h3>用户体验设计师一枚，热衷于思考人类的生活与存在的意义。</h3>
 		<p>致力于用设计来记录、改造城市。</p>
 	</section>
+
+	<script>
+		$(function () {
+			$('.navBtn').click(function(){
+				$('.nav').fadeIn();
+			});
+
+			$('.arrow').click(function(){
+				$('.nav').fadeOut();
+			})
+			
+		})
+	</script>
 </body>
 </html>

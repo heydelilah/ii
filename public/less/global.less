@@ -10,45 +10,23 @@
 @color-title: #8bc2bb;
 @color-grey: #999;
 
-
+.clear{
+	clear: both;
+}
+.fl{
+	float: left;
+}
 .header{
 	background-color: @bg-header;
 	padding: 30px;
 	height: 140px;
-}
-
-.content{
-	background-color: @bg-body;
-	height: 100%;
-	padding: 30px;
-}
-
-.desc{
-	font-size: 18px;
-	font-family: @font-cn;
-	color: @color-grey;
-}
-
-.title{
-	text-align: center;
-	color: @color-title;
-	font-family: @font-en;
-	h1{
-
+	.desc{
+		font-size: 18px;
+		font-family: @font-cn;
+		color: @color-grey;
 	}
-	span{
-		height: 1px;
-		background-color: @color-title;
-		width: 300px;
-		display: inline-block;
-		margin: 22px;
-	}
-	p{
-	}
-}
-nav{
-	float: right;
-	.button{
+	.navBtn{
+		float: right;
 		color: @color-title;
 		border: 1px solid @color-title;
 		padding: 10px 40px;
@@ -58,4 +36,75 @@ nav{
 			background-color: #e6f4f2;
 		}
 	}
+	.title{
+		text-align: center;
+		color: @color-title;
+		font-family: @font-en;
+		h1{
+			font-size: 60px;
+			font-weight: lighter;
+			margin: 0;
+		}
+		p{
+			font-size: 24px;
+		}
+		.line{
+			height: 1px;
+			background-color: @color-title;
+			width: 300px;
+			display: inline-block;
+			margin: 22px;
+		}
+	}
 }
+
+.nav{
+	display: none;
+	width: 155px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #e6f4f2;
+    background-color: #fff;
+    padding: 30px;
+    .arrow{
+    	display: inline-block;
+    	height: 40px;
+    	width: 40px;
+    	background: url("../images/arrow.png");
+		position: absolute;
+		margin-left: -65px;
+		background-color: #fff;
+		border-radius: 5px;
+		cursor: pointer;
+    }
+    li{
+    	a{
+	    	font:18px @font-en;
+	    	color: @color-grey;
+	    	line-height: 40px;
+	    	height: 40px;
+	    	padding: 10px 0;
+
+	    	&.act{
+	    		color: @color-title;
+	    		border-bottom: 1px solid @color-title;
+	    	}
+
+	    	&:hover{
+	    		color: @color-title;
+	    	}
+    	}
+
+    }
+}
+
+.content{
+	background-color: @bg-body;
+	height: 100%;
+	padding: 30px;
+}
+
+
+
