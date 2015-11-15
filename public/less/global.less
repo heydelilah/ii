@@ -1,0 +1,61 @@
+@link-color:        #428bca; // sea blue
+@link-color-hover:  darken(@link-color, 10%);
+
+@font-en: 'STFangsong';
+@font-cn: "Microsoft YaHei", "微软雅黑", STXihei;
+
+@bg-header: rgba(164, 235, 226, 0.3);
+@bg-body: #dde6e6;
+
+@color-title: #8bc2bb;
+@color-grey: #999;
+
+
+.header{
+	background-color: @bg-header;
+	padding: 30px;
+	height: 140px;
+}
+
+.content{
+	background-color: @bg-body;
+	height: 100%;
+	padding: 30px;
+}
+
+.desc{
+	font-size: 18px;
+	font-family: @font-cn;
+	color: @color-grey;
+}
+
+.title{
+	text-align: center;
+	color: @color-title;
+	font-family: @font-en;
+	h1{
+
+	}
+	span{
+		height: 1px;
+		background-color: @color-title;
+		width: 300px;
+		display: inline-block;
+		margin: 22px;
+	}
+	p{
+	}
+}
+nav{
+	float: right;
+	.button{
+		color: @color-title;
+		border: 1px solid @color-title;
+		padding: 10px 40px;
+		border-radius: 6px;
+		cursor: pointer;
+		&:hover{
+			background-color: #e6f4f2;
+		}
+	}
+}
