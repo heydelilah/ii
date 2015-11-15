@@ -1,0 +1,69 @@
+.header {
+  background-color: rgba(164, 235, 226, 0.3);
+  padding: 30px;
+  height: 140px;
+}
+.content {
+  background-color: #dde6e6;
+  height: 100%;
+  padding: 30px;
+}
+.desc {
+  font-size: 18px;
+  font-family: "Microsoft YaHei", "微软雅黑", STXihei;
+  color: #999999;
+}
+.title {
+  text-align: center;
+  color: #8bc2bb;
+  font-family: 'STFangsong';
+}
+.title span {
+  height: 1px;
+  background-color: #8bc2bb;
+  width: 300px;
+  display: inline-block;
+  margin: 22px;
+}
+nav {
+  float: right;
+}
+nav .button {
+  color: #8bc2bb;
+  border: 1px solid #8bc2bb;
+  padding: 10px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+nav .button:hover {
+  background-color: #e6f4f2;
+}
+body,
+p {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.title h1 {
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 0;
+}
+.title p {
+  font-size: 24px;
+}
+.content {
+  padding: 90px;
+  text-align: center;
+}
+.content h3,
+.content p {
+  margin: 0;
+  font-weight: lighter;
+  line-height: 48px;
+  font-size: 24px;
+  font-family: 'STFangsong';
+  color: #999999;
+}
